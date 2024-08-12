@@ -10,6 +10,12 @@ const postRoutes = require('./routes/post');
 
 const app = express();
 
+app.use(cors({
+  origin: 'https://community-front-red.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(express.json());
 
 app.use((req, res, next) => {
