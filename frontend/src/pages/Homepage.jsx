@@ -1,32 +1,11 @@
-import { CiFlag1 } from "react-icons/ci";
-
+import { SignalIcon, InfoIcon, FlagIcon, ComponentIcon, CalendarIcon, BadgeIcon } from '../components/Icons'
 const Homepage = () => {
   
   return (
 <div className="flex flex-col min-h-[100dvh]">
-      <header className="px-4 lg:px-6 h-14 flex items-center bg-[#4158D0] text-white">
-        <button href="#" className="flex items-center justify-center" prefetch={false}>
-          <GroupIcon className="h-6 w-6" />
-          <span className="sr-only">Community Engagement Platform</span>
-        </button>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <button href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Features
-          </button>
-          <button href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Testimonials
-          </button>
-          <button href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Pricing
-          </button>
-          <button href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Contact
-          </button>
-        </nav>
-      </header>
       <main className="flex-1">
         <section className="w-full py-12 sm:py-24 lg:py-32 bg-gradient-to-r from-[#4158D0] to-[#C850C0]">
-          <div className="container px-4 md:px-6 flex flex-col items-center text-center space-y-6">
+          <div className=" px-4 md:px-6 flex flex-col items-center text-center space-y-6">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">Engage Your Community</h1>
             <p className="max-w-[700px] text-lg sm:text-xl text-white">
               Our platform provides the tools and features you need to build and nurture a thriving online community.
@@ -41,7 +20,7 @@ const Homepage = () => {
           </div>
         </section>
         <section className="w-full py-12 sm:py-24 lg:py-32 bg-[#f0f0f0]">
-          <div className="container px-4 md:px-6">
+          <div className=" px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4158D0]">Key Features</h2>
@@ -87,7 +66,7 @@ const Homepage = () => {
           </div>
         </section>
         <section className="w-full py-12 sm:py-24 lg:py-32 bg-[#f0f0f0]">
-          <div className="container px-4 md:px-6">
+          <div className=" px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4158D0]">What Our Users Say</h2>
@@ -140,178 +119,10 @@ const Homepage = () => {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-[#4158D0] text-white">
-        <p className="text-xs">&copy; 2024 Community Engagement Platform. All rights reserved.</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <button href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
-            Terms of Service
-          </button>
-          <button href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
-            Privacy Policy
-          </button>
-        </nav>
-      </footer>
+
     </div>
   )
 }
-
-function BadgeIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
-    </svg>
-  )
-}
-
-
-function CalendarIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M8 2v4" />
-      <path d="M16 2v4" />
-      <rect width="18" height="18" x="3" y="4" rx="2" />
-      <path d="M3 10h18" />
-    </svg>
-  )
-}
-
-
-function ComponentIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z" />
-      <path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z" />
-      <path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z" />
-      <path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z" />
-    </svg>
-  )
-}
-
-
-function FlagIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
-      <line x1="4" x2="4" y1="22" y2="15" />
-    </svg>
-  )
-}
-
-
-function GroupIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M3 7V5c0-1.1.9-2 2-2h2" />
-      <path d="M17 3h2c1.1 0 2 .9 2 2v2" />
-      <path d="M21 17v2c0 1.1-.9 2-2 2h-2" />
-      <path d="M7 21H5c-1.1 0-2-.9-2-2v-2" />
-      <rect width="7" height="5" x="7" y="7" rx="1" />
-      <rect width="7" height="5" x="10" y="12" rx="1" />
-    </svg>
-  )
-}
-
-
-function InfoIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12" cy="12" r="10" />
-      <path d="M12 16v-4" />
-      <path d="M12 8h.01" />
-    </svg>
-  )
-}
-
-
-function SignalIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M2 20h.01" />
-      <path d="M7 20v-4" />
-      <path d="M12 20v-8" />
-      <path d="M17 20V8" />
-      <path d="M22 4v16" />
-    </svg>
-  )
-}
-
 
 
 export default Homepage;

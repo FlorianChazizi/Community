@@ -18,10 +18,10 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-[#4158D0] p-4 z-auto">
+    <nav className="bg-gradient-to-r from-[#4158D0] to-[#C850C0] p-4 z-auto ">
       
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-lg font-bold z-10">
+      <div className="container mx-auto flex justify-between items-center ">
+        <div className="text-white text-lg font-bold z-10 ">
           <Link to="/" className="text-white text-xl drop-shadow-md px-3 py-2 rounded-md text-sm font-medium hover:bg-white hover:text-black hover:shadow-md transition duration-300">CEP Application</Link>
         </div>
         <div className="flex space-x-4 z-10">
