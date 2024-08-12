@@ -8,7 +8,7 @@ const communityRoutes = require('./routes/community');
 const postRoutes = require('./routes/post');
 
 const app = express();
-app.use(cors());
+
 app.use(express.json());
 
 app.use((req, res, next) => {
