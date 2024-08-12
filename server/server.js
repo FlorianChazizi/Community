@@ -3,6 +3,7 @@ require('dotenv').config() // Load environment variables
 const express = require('express');
 const mongoose = require('mongoose');
 const connectDB = require('./config/database');
+const cors = require('cors');
 
 // routes imports 
 const userRoutes = require('./routes/user'); 
@@ -10,6 +11,7 @@ const communityRoutes = require('./routes/community');
 const postRoutes = require('./routes/post')
 
 const app = express();
+app.use(cors());
 
 app.use(express.json());
 
