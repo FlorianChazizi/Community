@@ -37,7 +37,7 @@ export const usePosts = (communityName, user) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/post/create', {
+      const response = await fetch('https://community-api-gamma.vercel.app/api/post/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
