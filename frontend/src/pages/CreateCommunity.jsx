@@ -17,7 +17,7 @@ const CreateCommunity = () => {
 
     const community = { c_name, c_description, c_creator_id: user._id };
 
-    const response = await fetch('/api/community/create', {
+    const response = await fetch('https://community-api-gamma.vercel.app/api/community/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
