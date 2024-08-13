@@ -46,7 +46,7 @@ export const useCommunityData = (communityName, user) => {
   const joinCommunity = async () => {
     setJoinLoading(true);
     try {
-      const response = await fetch(`/api/community/join/${communityName}`, {
+      const response = await fetch(`https://community-api-gamma.vercel.app/api/community/join/${communityName}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
