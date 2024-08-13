@@ -22,7 +22,8 @@ const createCommunity = async ( req, res ) => {
 
 const getAllCommunities = async ( req, res ) => {
   try {
-    const communities = await Community.find();
+    const communities = await Community.find()
+    .populate('c_creator_id', 'username');
     res.status(200).json(communities);
     console.log('Communities displayed!')
   } catch (error) {
