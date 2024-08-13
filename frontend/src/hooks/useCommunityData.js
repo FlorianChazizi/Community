@@ -17,7 +17,7 @@ export const useCommunityData = (communityName, user) => {
       }
 
       try {
-        const response = await fetch(`/api/community/${communityName}`, {
+        const response = await fetch(`https://community-api-gamma.vercel.app/api/community/${communityName}`, {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${user.token}`,

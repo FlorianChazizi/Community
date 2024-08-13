@@ -11,7 +11,7 @@ export const usePosts = (communityName, user) => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch(`/api/post/community/${communityName}`, {
+        const response = await fetch(`https://community-api-gamma.vercel.app/api/post/community/${communityName}`, {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${user.token}`,

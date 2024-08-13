@@ -12,7 +12,7 @@ export const useSignup = () => {
     setIsLoading(true)
     setError(null)
 
-    const response = await fetch('/api/user/register', {
+    const response = await fetch('https://community-api-gamma.vercel.app/api/user/register', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ username, email, password })
