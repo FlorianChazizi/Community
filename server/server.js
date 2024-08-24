@@ -7,6 +7,7 @@ const cors = require('cors');
 const userRoutes = require('./routes/user');
 const communityRoutes = require('./routes/community');
 const postRoutes = require('./routes/post');
+const commentRoutes = require('./routes/comment')
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.use((req, res, next) => {
 app.use('/api/user', userRoutes);
 app.use('/api/community', communityRoutes);
 app.use('/api/post', postRoutes);
+app.use('/api/comment', commentRoutes);
 
 connectDB();
 
